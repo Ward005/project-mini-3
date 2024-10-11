@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
 
     <title>Document</title>
   </head>
@@ -102,7 +103,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
-            <div class="inner-box">
+            <div class="inner-box wow fadeInUp" data-wow-duration="0.5s">
               <div class="inner-icon">
                 <img src="assets/images/featured-item-01.png" alt="logo" />
               </div>
@@ -113,7 +114,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
-            <div class="inner-box">
+            <div class="inner-box wow fadeInUp" data-wow-duration="1.2s">
               <div class="inner-icon">
                 <img src="assets/images/featured-item-01.png" alt="logo" />
               </div>
@@ -124,7 +125,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-sm-6 col-12">
-            <div class="inner-box">
+            <div class="inner-box wow fadeInUp" data-wow-duration="1.8s">
               <div class="inner-icon">
                 <img src="assets/images/featured-item-01.png" alt="logo" />
               </div>
@@ -144,7 +145,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-5 col-md-12 col-12">
-            <div class="inner-image">
+            <div class="inner-image wow fadeInLeft" data-wow-delay="0.5s">
               <img src="assets/images/left-image.png" alt="left" />
             </div>
           </div>
@@ -172,7 +173,7 @@
             </div>
           </div>
           <div class="col-xl-5 col-md-12 col-12">
-            <div class="inner-image">
+            <div class="inner-image wow fadeInRight" data-wow-delay="0.5s">
               <img src="assets/images/right-image.png" alt="left" />
             </div>
           </div>
@@ -351,7 +352,11 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-            <div class="inner-box">
+            <div
+              class="inner-box wow fadeInUp"
+              data-wow-duration="0.5s"
+              data-wow-delay="0.4s"
+            >
               <h5 class="inner-title">Starter</h5>
               <div class="inner-price">
                 <p class="price">$14.50<br /></p>
@@ -370,7 +375,11 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-            <div class="inner-box">
+            <div
+              class="inner-box wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.4s"
+            >
               <h5 class="inner-title">Starter</h5>
               <div class="inner-price inner-price-two">
                 <p class="price">$14.50</p>
@@ -389,7 +398,11 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-            <div class="inner-box">
+            <div
+              class="inner-box wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="0.4s"
+            >
               <h5 class="inner-title">Starter</h5>
               <div class="inner-price">
                 <p class="price">$14.50</p>
@@ -550,13 +563,13 @@
             <form action="#">
               <div class="row">
                 <div class="col-xl-6">
-                  <input type="text" placeholder="Full Name">
+                  <input type="text" placeholder="Full Name" />
                 </div>
                 <div class="col-xl-6">
-                  <input type="text" placeholder="E-Mail Address">
+                  <input type="text" placeholder="E-Mail Address" />
                 </div>
                 <div class="col-12">
-                  <input id="mess" type="text" placeholder="Your Message">
+                  <input id="mess" type="text" placeholder="Your Message" />
                 </div>
                 <div class="col-12">
                   <div class="button button-one">Send Message</div>
@@ -570,7 +583,7 @@
     <!-- End Section Form -->
 
     <!-- Footer -->
-     <footer>
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -586,11 +599,13 @@
           </div>
 
           <div class="col-12">
-            <p class="inner-desc">Copyright © 2020 Softy Pinko Company - Design: TemplateMo</p>
+            <p class="inner-desc">
+              Copyright © 2020 Softy Pinko Company - Design: TemplateMo
+            </p>
           </div>
         </div>
       </div>
-     </footer>
+    </footer>
     <!-- End Footer -->
 
     <script
@@ -603,5 +618,9 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
